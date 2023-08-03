@@ -2,20 +2,46 @@
 <html>
 
 <head>
-    <title>Get Organised</title>
+    <title>Get Organised!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <h1>Get Organised!</h1>
-    <div id="toDoList">
-        <h2>To Do</h2>
+    <div id="content">
+        <div id="toDoList">
+            <h2 id="toDoTitle">TO DO </h2>
+            <hr />
+            <div id="task-container">
+                <div class="task">
+                    <button class="deleteBtn">✖</button>
+                    Hello!
+                </div>
+            </div>
+        </div>
+
+        <div id="completedList">
+            <h2>COMPLETED</h2>
+            <hr />
+            <div id="completed-container">
+                <div class="completed">
+                    <button class="deleteCompleteBtn">✖</button>
+                    <span>Hello!</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="completedList">
-        <h2>Completed</h2>
+    <div id="input-container">
+        <input id="taskInput" placeholder="Enter new task" type="text" />
+        <button id="addTaskBtn">Add</button>
     </div>
-    <input id="newTask" type="text" />
-    <button id="addTaskBtn">Add</button>
+
 </body>
 
 </html>
